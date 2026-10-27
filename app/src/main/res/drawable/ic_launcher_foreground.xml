@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer radar sweep arc -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M32,40 A26,26 0 0,1 76,40" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00E676"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M26,54 A32,32 0 1,0 76,28" />
+
+    <!-- Bullish Candlesticks in center -->
+    <!-- Candle 1: smaller left -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00E676"
+        android:strokeWidth="1.5"
+        android:pathData="M38,50 L38,68" />
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M35,54 L41,54 L41,64 L35,64 Z" />
+
+    <!-- Candle 2: medium center -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00E676"
+        android:strokeWidth="1.5"
+        android:pathData="M48,42 L48,64" />
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M45,46 L51,46 L51,60 L45,60 Z" />
+
+    <!-- Candle 3: breakout tall right with lightning / arrow -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="1.8"
+        android:pathData="M58,34 L58,58" />
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M55,38 L61,38 L61,54 L55,54 Z" />
+
+    <!-- Scout Radar target reticle / scout eye -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M69,36 L75,36 L75,42 L69,42 Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M65,48 L72,41 L78,47 L85,35" />
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M81,35 L85,35 L85,39 Z" />
+</vector>

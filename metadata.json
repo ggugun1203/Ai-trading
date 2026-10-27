@@ -1,0 +1,7 @@
+{
+  "name": "Crypto Scout AI",
+  "description": "Aplikasi analisis pasar aset kripto, pemindai likuiditas & keamanan, skor peluang swing trading, dan kalkulator manajemen risiko.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
