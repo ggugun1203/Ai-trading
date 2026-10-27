@@ -23,7 +23,9 @@ data class BinanceTicker24h(
 
 interface BinanceApiService {
     @GET("api/v3/ticker/24hr")
-    suspend fun get24hTickers(): List<BinanceTicker24h>
+    suspend fun get24hTickers(
+        @Query("symbols") symbols: String? = null
+    ): List<BinanceTicker24h>
 
     @GET("api/v3/klines")
     suspend fun getKlines(

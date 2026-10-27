@@ -83,8 +83,9 @@ class CryptoScoutRepository(
      */
     suspend fun fetchMarketTickers(): Pair<List<MarketTicker>, String> = withContext(Dispatchers.IO) {
         try {
-            val rawTickers = apiService.get24hTickers()
-            val filtered = rawTickers.filter { it.symbol in prioritySymbols }.map { raw ->
+            val symbolsJson = prioritySymbols.joinToString(prefix = "[\"", separator = "\",\"", postfix = "\"]")
+            val rawTickers = apiService.get24hTickers(symbols = symbolsJson)
+            val filtered = rawTickers.map { raw ->
                 val lastPrice = raw.lastPrice.toDoubleOrNull() ?: 0.0
                 val change = raw.priceChangePercent.toDoubleOrNull() ?: 0.0
                 val high = raw.highPrice.toDoubleOrNull() ?: 0.0
